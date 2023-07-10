@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
+#This gem is needed for the user login authentication
+gem 'bcrypt', '~> 3.1.7'
+
 #This gem will implement bootstrap into my project
 gem 'bootstrap', '~> 4.6', '>= 4.6.0'
 
