@@ -1,12 +1,34 @@
-<h1>Articles</h1>
-Our blog has <%= Article.public_count %> articles and counting!
-<ul>
-  <% @articles.each do |article| %>
-    <% unless article.archived? %>
-      <li>
-        <%= link_to article.title, article %>
-      </li>
-    <% end %>
-  <% end %>
-</ul>
-<%= link_to "New Article", new_article_path %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Gaming Blog</title>
+    <%= stylesheet_link_tag "application" %>
+  </head>
+  <body>
+    <h1>The Ultimate Gaming Collection</h1>
+    <h6> Welcome to the the gaming blog, your number one blog for the hottest collection of games</h6>  
+    <p>At the moment, our blog has <%= Article.public_count %> game(s) and counting!</p>
+
+    <div class = "highlights">
+    <ul>
+      <% @articles.each do |article| %>
+        <% unless article.archived? %>
+          <li>
+            <%= link_to article.title, article %>
+          </li>
+        <% end %>
+      <% end %>
+    </ul>
+    </div>
+  
+  <%# <%= button_tag "Click Me", class: "btn btn-primary" %>
+  <%# <%= link_to "New Article", new_article_path %>
+  
+  <hr>
+  <h2>You can help us expand our collection!</h2>
+  <div class = "newArticleBtn">
+  <%= button_to "Add New Article", new_article_path, method: :get, class: "btn btn-primary" %>
+  </div>
+
+  </body>
+</html>

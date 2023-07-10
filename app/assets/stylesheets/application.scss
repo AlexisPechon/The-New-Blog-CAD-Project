@@ -16,3 +16,64 @@
 
  @import "bootstrap";
 
+ h1{
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align:center;
+    background-color:grey;
+    padding:2%;
+ }
+
+ h2{
+    text-align:center;
+ }
+
+ h6{
+    text-align:center;
+ }
+
+ p{
+    text-align: center;
+ }
+
+ .highlights{
+    //outline-width: medium;
+    //outline-style: dashed;
+    //margin-right: 80%;
+
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+ }
+
+.newArticleBtn{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ ul{
+    list-style-type: none;
+ }
+
+ li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .form{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+ }
+
+ .errorMessage{
+    color:red;
+    font-weight: 650;
+ }
+
+ .backHome{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+ }
