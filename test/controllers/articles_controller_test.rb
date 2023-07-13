@@ -15,4 +15,8 @@ class ArticlesControllerTest < ActionDispatch::IntegrationTest
     assert_not blogTitle.valid?
   end
   
+  test "if it works" do
+    get "http://127.0.0.1:3000/articles/new"
+    assert_response:success
+  end
 end
