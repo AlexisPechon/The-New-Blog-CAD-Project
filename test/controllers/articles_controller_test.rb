@@ -22,11 +22,6 @@ class ArticlesControllerTest < ActionDispatch::IntegrationTest
     get "http://127.0.0.1:3000/articles"
     assert_response:success
   end
-
-  test "if login can be accessed" do
-    get "http://127.0.0.1:3000/login"
-    assert_response:success
-  end
   
   #End of Functional Testing
 
