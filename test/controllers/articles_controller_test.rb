@@ -48,4 +48,12 @@ class ArticlesControllerTest < ActionDispatch::IntegrationTest
   
   #End of Functional Testing
 
+  # Integration Testing
+
+  test "should get the homepage" do
+    get '/articles'
+    assert_response:success
+  end
+
+  # End of Integration Testing
 end
