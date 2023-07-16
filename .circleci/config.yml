@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    working_directory: /blog
+    docker:
+      - image: ruby:3.1.2
+        environment:
+          RAILS_ENV: test
+    steps:
+      - checkout
+      - run: gem install bundler
+      - run: rails server
+      - run: rails -s
