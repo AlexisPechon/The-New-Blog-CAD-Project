@@ -1,0 +1,14 @@
+<h1>Accounts#login</h1>
+#<p>Find me in app/views/accounts/login.html.erb</p>
+
+<h1>Account Login</h1>
+
+<%= form_with url: login_path, method: :post do |form| %>
+  <%= form.label :email %>
+  <%= form.email_field :email %>
+
+  <%= form.label :password %>
+  <%= form.password_field :password %>
+
+  <%= form.submit 'Login' %>
+<% end %>

@@ -1,0 +1,14 @@
+<h1>Accounts#new</h1>
+#<p>Find me in app/views/accounts/new.html.erb</p>
+
+<h1>Account Registration</h1>
+
+<%= form_with model: @account, url: signup_path, method: :post do |form| %>
+  <%= form.label :email %>
+  <%= form.email_field :email %>
+
+  <%= form.label :password %>
+  <%= form.password_field :password %>
+
+  <%= form.submit 'Register' %>
+<% end %>
