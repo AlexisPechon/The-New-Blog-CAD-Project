@@ -10,5 +10,7 @@ jobs:
       - checkout
       - run: gem install bundler
       - run: bundle install
+      - run: rails db:create
+      - run: rails db:migrate
       - run: rails server
-      - run: rails -s
+      - run: rails test
