@@ -30,7 +30,20 @@
   <%= button_to "Add New Article", new_article_path, method: :get, class: "btn btn-primary" %>
   </div>
 
+  <hr>
+
+  <h2>Join us today!</h2>
+  <div class="userLogin">
+    <%= button_to "Sign In!", login_path, method: :get, class: "btn btn-primary" %>
+    <p>or</p>
+    <%= button_to "Sign Up!", new_user_path, method: :get, class: "btn btn-primary" %>
+    <%# <%= link_to "Sign up", new_user_path %>
+    <%# <%= link_to "Sign in", login_path %>
+  </div>
+
+  <hr>  
   <iframe src="https://discord.com/widget?id=1130257966415745124&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-  
+
+
   </body>
 </html>
