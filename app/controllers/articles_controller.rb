@@ -1,3 +1,5 @@
+require 'my_logger' #design pattern implemntation
+
 class ArticlesController < ApplicationController
   http_basic_authenticate_with name:"admin", password: "manager", except: [:index, :show]
   def index
@@ -16,6 +18,8 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
     if @article.save
       redirect_to @article
+      mylog = MyLogger.instance
+      mylog.logInfo("new article, title:  "+ @article.title)
     else
       render :new, status: :unprocessable_entity
     end
