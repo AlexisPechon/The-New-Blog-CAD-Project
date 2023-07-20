@@ -15,6 +15,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
+    #Method allows for the creation of a new game/article
     @article = Article.new(article_params)
     if @article.save
       redirect_to @article
@@ -26,10 +27,12 @@ class ArticlesController < ApplicationController
   end
 
   def edit
+    #Method allows the user to edit the entry of their game
     @article = Article.find(params[:id])
   end
 
   def update
+    #Method allows the user to update their current entry of their game
     @article = Article.find(params[:id])
     if @article.update(article_params)
       redirect_to @article
@@ -39,6 +42,7 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
+    #Method that allows the user to destroy the entry of their game
     @article = Article.find(params[:id])
     @article.destroy
 

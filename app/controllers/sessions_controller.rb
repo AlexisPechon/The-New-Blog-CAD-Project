@@ -9,6 +9,9 @@ class SessionsController < ApplicationController
       #The code that is commented out below shows the different attempts I have made
       #to make this code work with its intended functionalities.
 
+      #The purpose of this method was to allow the user to create their account when
+      #they provide the appropriate information such as their email and password.
+
       # # @user = User.find_by(email: params[:email]="arpechon@outlook.com")
       # @user = User.find_by(email: "arpechon@outlook.com")
       # # if @user && @user.authenticate(params[:password]="aaaa")
@@ -49,6 +52,7 @@ class SessionsController < ApplicationController
     end
   
     def destroy
+      #The destroy method will be executed once the user logs out of their account
       log_out
       redirect_to root_url
     end

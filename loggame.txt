@@ -1,3 +1,9 @@
 ---new item---
 new article, title:  Shin Megami Tensei III Nocturne HD Remaster
 ---end of item---
+---new item---
+new article, title:  Shin Megami Tensei IV
+---end of item---
+---new item---
+new article, title:  Shin Megami Tensei V
+---end of item---

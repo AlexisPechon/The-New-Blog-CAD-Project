@@ -5,10 +5,15 @@
     <%= stylesheet_link_tag "application" %>
   </head>
   <body>
+    <%# The index.html.erb file will contain the logic that is needed to display the
+    <%# contents of the website back to the user. %>
+
     <h1>The Ultimate Gaming Collection</h1>
     <h6> Welcome to the the gaming blog, your number one blog for the hottest collection of games</h6>  
     <p>At the moment, our blog has <%= Article.public_count %> game(s) and counting!</p>
 
+    <%# The div class highlights will store the information of the articles that were stored 
+    <%# and displays them onto the main page of the website.%>
     <div class = "highlights">
     <ul>
       <% @articles.each do |article| %>
@@ -33,6 +38,8 @@
   <hr>
 
   <h2>Join us today!</h2>
+  <%# This part of the website will display two buttons that allow the user to
+  <%# create or sign into their accounts%>
   <div class="userLogin">
     <%= button_to "Sign In!", login_path, method: :get, class: "btn btn-primary" %>
     <p>or</p>
@@ -42,6 +49,7 @@
   </div>
 
   <hr>  
+  <%# The code below is an example of an External API. It is display a discord widget on my main page%>
   <iframe src="https://discord.com/widget?id=1130257966415745124&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
 

@@ -1,4 +1,8 @@
-<p><%= link_to 'Home', root_path %></p>
+<%# The following code follows the template design pattern as the code in this file will appear in all of the webpages%>
+
+<div class = "backHome">
+    <p><%= button_to 'Home', root_path, method: :get, class: "btn btn-primary" %></p>
+</div>
 
 <p>Programmer joke Q: <%= @randoms.inspect %></p>
 

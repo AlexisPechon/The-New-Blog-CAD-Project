@@ -3,12 +3,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
+#This gem is needed to maintain the API Functionality - External Gem
 gem 'httparty', '~> 0.20.0'
 
-#This gem is needed for the user login authentication
+#This gem is needed for the user login authentication - External Gem
 gem 'bcrypt', '~> 3.1.7'
 
-#This gem will implement bootstrap into my project
+#This gem will implement bootstrap into my project - External Gem
 gem 'bootstrap', '~> 4.6', '>= 4.6.0'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"

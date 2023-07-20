@@ -14,7 +14,11 @@
  *= require_self
  */
 
- @import "bootstrap";
+ /*
+  * The purpose of this SCSS file is to modifying the appearance of my webapge
+ */
+
+ @import "bootstrap"; /*Line of code that imports the bootstrap after installing the bootstrap gem*/
 
  h1{
     font-family: "Lucida Console", "Courier New", monospace;
