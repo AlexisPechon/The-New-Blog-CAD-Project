@@ -4,8 +4,8 @@ class SingletonDP
     include Singleton
 
     def load_config(filename)
-		puts "loading file #{filename}..."
-	end
+		  puts "loading file #{filename}..."
+	  end
 
 end
 
