@@ -99,8 +99,8 @@ GEM
     ffi (1.15.5-x64-mingw-ucrt)
     globalid (1.1.0)
       activesupport (>= 5.0)
-    httparty (0.21.0)
-      mini_mime (>= 1.0.0)
+    httparty (0.20.0)
+      mime-types (~> 3.0)
       multi_xml (>= 0.5.2)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
@@ -124,6 +124,9 @@ GEM
     marcel (1.0.2)
     matrix (0.4.2)
     method_source (1.0.0)
+    mime-types (3.4.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2023.0218.1)
     mini_mime (1.1.2)
     minitest (5.18.1)
     msgpack (1.7.2)
@@ -241,7 +244,7 @@ DEPENDENCIES
   bootstrap (~> 4.6, >= 4.6.0)
   capybara
   debug
-  httparty
+  httparty (~> 0.20.0)
   importmap-rails
   jbuilder
   puma (~> 5.0)
