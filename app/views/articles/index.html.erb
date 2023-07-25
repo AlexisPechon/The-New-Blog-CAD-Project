@@ -44,14 +44,16 @@
     <%= button_to "Sign In!", login_path, method: :get, class: "btn btn-primary" %>
     <p>or</p>
     <%= button_to "Sign Up!", new_user_path, method: :get, class: "btn btn-primary" %>
-    <%# <%= link_to "Sign up", new_user_path %>
-    <%# <%= link_to "Sign in", login_path %>
   </div>
 
-  <hr>  
-  <%# The code below is an example of an External API as it uses Discord's API as it is pulling information from the server. It is display a discord widget on my main page%>
-  <iframe src="https://discord.com/widget?id=1130257966415745124&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+  <hr>
+  
+  <div class = "discordServer">
+    <h2>Become a Discord Server Member!</h2>
+    <%= button_to "Discord Server", discord_widget_fetch_data_path, method: :get, class: "btn btn-primary" %>
+  </div>
 
+  <hr>
 
   </body>
 </html>

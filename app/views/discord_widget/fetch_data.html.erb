@@ -1,8 +1,17 @@
-<h1>Discord Widget Data</h1>
-# <pre><%= JSON.pretty_generate(@widget_data) %></pre>
+<h1>The Wonderful Discord Server</h1>
 
-<div>
-  <strong>Widget ID:</strong> <%= @widget_data["id"] %><br>
-  <strong>Name:</strong> <%= @widget_data["name"] %><br>
-  <!-- Add other attributes you want to display -->
+<div class = "discordAPICall">
+  <strong><p> Server Details: </p></strong>
+  <strong>Server Name: </strong> <%= @widget_data["name"] %><br>
+  <strong>Join in the Action: </strong> <%= @widget_data["instant_invite"] %><br>
+
+  <br>
+
+  <h4> Who's online? </h4>
+  <% @widget_data["members"].each do |member| %>
+    <strong>ID:</strong> <%= member["id"] %><br>
+    <strong>Discord Username:</strong> <%= member["username"] %><br>
+    <strong>Activity Status:</strong> <%= member["status"] %><br>
+    <br>
+  <% end %>
 </div>
