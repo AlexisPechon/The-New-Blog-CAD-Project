@@ -29,6 +29,8 @@ class ArticlesController < ApplicationController
   def edit
     #Method allows the user to edit the entry of their game
     @article = Article.find(params[:id])
+    mylog = MyLogger.instance
+    mylog.logInfo("the body has been updated: " + @article.body + " [ORIGINAL BODY]")
   end
 
   def update
