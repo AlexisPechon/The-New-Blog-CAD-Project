@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'joke/joke'
   root "articles#index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -14,5 +15,5 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#destroy'
 
   get 'discord_widget/fetch_data', to: 'discord_widget#fetch_data'
-  
+  get 'joke', to: 'joke#joke'
 end
