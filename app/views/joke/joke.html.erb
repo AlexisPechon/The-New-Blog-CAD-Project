@@ -1,4 +1,8 @@
 <h1>Joke of the Day</h1>
-<p>Programmer joke Q: <%= @randoms.inspect %></p>
 
-<p>A:<%= @randomd.inspect %> </p>
+<% if @randoms.present? %>
+    <p>Programmer joke Q: <%= @randoms.inspect %></p>
+    <p>A:<%= @randomd.inspect %> </p>
+<% else %>
+    <strong><p>Something went wrong... Please refresh the webpage</p></strong>
+<% end %>
