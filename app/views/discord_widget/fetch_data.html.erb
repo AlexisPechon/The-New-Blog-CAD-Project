@@ -1,6 +1,9 @@
 <h1>The Wonderful Discord Server</h1>
 
-<div class = "discordAPICall mt-3">
+<%# This file contains the code and logic necessary to display the information of the discord API%>
+<%# to the webpage. %>
+
+<div class = "discordAPICall mt-3"> <%# mt-3 uses bootstrap %>
   <strong><p> Server Details: </p></strong>
   <strong>Server Name: </strong> <%= @widget_data["name"] %><br>
   <strong>Join in the Action: </strong> <%= @widget_data["instant_invite"] %><br>
@@ -8,7 +11,7 @@
   <br>
 
   <h4> Who's online? </h4>
-  <% @widget_data["members"].each do |member| %>
+  <% @widget_data["members"].each do |member| %> <%# This line of code runs through the different members that are on the API %>
     <strong>ID:</strong> <%= member["id"] %><br>
     <strong>Discord Username:</strong> <%= member["username"] %><br>
     <strong>Activity Status:</strong> <%= member["status"] %><br>
