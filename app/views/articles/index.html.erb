@@ -15,10 +15,10 @@
     <%# The div class highlights will store the information of the articles that were stored 
     <%# and displays them onto the main page of the website.%>
     <div class = "highlights">
-    <ul>
+    <ul class = "list-group"> <%# This code implements bootstrap%>
       <% @articles.each do |article| %>
         <% unless article.archived? %>
-          <li>
+          <li class = "list-group-item"> <%# This code implements bootstrap%>
             <%= link_to article.title, article %>
           </li>
         <% end %>
@@ -42,7 +42,7 @@
   <%# create or sign into their accounts%>
   <div class="userLogin">
     <%= button_to "Sign In!", login_path, method: :get, class: "btn btn-primary" %>
-    <p>or</p>
+    <p class = "d-inline">or</p>
     <%= button_to "Sign Up!", new_user_path, method: :get, class: "btn btn-primary" %>
   </div>
 
