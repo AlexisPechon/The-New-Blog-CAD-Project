@@ -1,4 +1,7 @@
 class SessionsController < ApplicationController
+
+  #@Reference: https://dev.to/kjdowns/creating-a-user-login-system-ruby-on-rails-2kl2
+
     # def new
     #   @user = User.new
     # end
