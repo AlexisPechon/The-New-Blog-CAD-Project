@@ -1,8 +1,8 @@
 <h1>Joke of the Day</h1>
 <strong><p>Refresh the webpage or hit F5 to display a new joke!</p></strong>
 <% if @randoms.present? %>
-    <p class = "mb-0">Programmer joke Q: <%= @randoms.inspect %></p> <%# mb-0 implements bootstrap%>
-    <p class = "mb-0">A:<%= @randomd.inspect %> </p> <%# mb-0 implements bootstrap%>
+    <p class = "mb-0">Programmer joke Q: <%= @randoms.inspect %></p> <%# mb-0 uses bootstrap%>
+    <p class = "mb-0">A:<%= @randomd.inspect %> </p> <%# mb-0 uses bootstrap%>
 <% else %>
     <strong><p>Something went wrong... Please refresh the webpage</p></strong>
 <% end %>
