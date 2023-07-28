@@ -6,15 +6,10 @@ jobs:
       - image: ruby:3.1.2
         environment:
           RAILS_ENV: test
-          executor: node/default
     steps:
       - checkout
-      - node/install-packages:
-        pkg-manager: npm
-      - run: npm install
       - run: gem install bundler
       - run: bundle install
-      - run: 
       - run: rails db:create
       - run: rails db:migrate
       - run: rails server
