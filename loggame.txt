@@ -7,4 +7,6 @@ new article, title:  Shin Megami Tensei IV
 ---new item---
 new article, title:  Shin Megami Tensei V
 ---end of item---
-
+---new item---
+new article, title:  Animal Crossing: New Horizons
+---end of item---

@@ -1,5 +1,9 @@
 class SessionsController < ApplicationController
 
+  #The purpose of the SessionsController class is to demonstrate the use of Sessions and Cookies inside
+  #of my Rails application. This is primarily used to handle the user login and logout activity
+  #within the webpage.
+
   #@Reference: https://dev.to/kjdowns/creating-a-user-login-system-ruby-on-rails-2kl2
 
     # def new

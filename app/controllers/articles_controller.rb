@@ -1,4 +1,4 @@
-require 'my_logger' #design pattern implemntation
+require 'my_logger' #design pattern implementation
 
 class ArticlesController < ApplicationController
   http_basic_authenticate_with name:"admin", password: "manager", except: [:index, :show]
@@ -19,6 +19,7 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
     if @article.save
       redirect_to @article
+      #The code belong is invoking the Singleton Design Pattern
       mylog = MyLogger.instance
       mylog.logInfo("new article, title:  "+ @article.title)
     else

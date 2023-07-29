@@ -41,5 +41,23 @@ class ArticlesControllerTest < ActionDispatch::IntegrationTest
     assert_response:success
   end
 
+  test "should get the sign up page" do
+    get '/users/new'
+    assert_response:success
+  end
+
+  test "should get the sign in page" do
+    get '/login'
+    assert_response:success
+  end
+
+  test "should get the discord server page" do
+    get '/discord_widget/fetch_data'
+  end
+
+  test "should get the joke page" do
+    get '/joke'
+  end
+
   # End of Integration Testing
 end

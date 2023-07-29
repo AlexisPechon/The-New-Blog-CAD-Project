@@ -5,7 +5,7 @@ class SessionsControllerTest < ActionDispatch::IntegrationTest
   #   assert true
   # end
 
-  test "" do
+  test "test to see if the login page can be accessed" do
     get "http://127.0.0.1:3000/login"
     assert_response:success
   end

@@ -1,4 +1,5 @@
 module SessionsHelper
+  #This file helps with controlling the Session and Cookies of the webpage by handling the user login and logout activity.
     def log_in(user)
         session[:user_id] = user.id
       end
