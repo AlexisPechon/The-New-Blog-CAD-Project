@@ -1,8 +1,13 @@
 <h1>Joke of the Day</h1>
+
+<%# This file contains the code and logic necessary to display the information of the dad jokes API%>
+<%# to the webpage. %>
+
 <strong><p>Refresh the webpage or hit F5 to display a new joke!</p></strong>
-<% if @randoms.present? %>
+<% if @randoms.present? %> <%# Checks to make sure that there is content inside of the API%>
     <p class = "mb-0">Programmer joke Q: <%= @randoms.inspect %></p> <%# mb-0 uses bootstrap%>
     <p class = "mb-0">A:<%= @randomd.inspect %> </p> <%# mb-0 uses bootstrap%>
 <% else %>
+    <%# Displays an error message if something went wrong with the API %>
     <strong><p>Something went wrong... Please refresh the webpage</p></strong>
 <% end %>

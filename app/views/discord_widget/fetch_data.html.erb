@@ -12,9 +12,9 @@
 
   <h4> Who's online? </h4>
   <% @widget_data["members"].each do |member| %> <%# This line of code runs through the different members that are on the API %>
-    <strong>ID:</strong> <%= member["id"] %><br>
-    <strong>Discord Username:</strong> <%= member["username"] %><br>
-    <strong>Activity Status:</strong> <%= member["status"] %><br>
+    <strong>ID:</strong> <%= member["id"] %><br> <%# displays the discord server member ID %>
+    <strong>Discord Username:</strong> <%= member["username"] %><br> <%# displays the discord username %>
+    <strong>Activity Status:</strong> <%= member["status"] %><br> <%# displays the discord member status %>
     <hr>
   <% end %>
 </div>

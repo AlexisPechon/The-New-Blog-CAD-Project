@@ -1,11 +1,16 @@
 <h1>Log in</h1>
 
+<%# The following file contains the necessary code to generate the input field for the user %>
+<%# to input their username and password %>
+
+<%# This file is also responsible for creating the login form for the user so that they could log in using their account%>
+
 <%= form_with(url: login_path) do |f| %>
     <%= f.label :email %>
-    <%= f.email_field :email, name: "session[email]" %>
+    <%= f.email_field :email, name: "session[email]" %> <%# Creates a field for the email and looks out for an email that was created during the session%>
   
     <%= f.label :password %>
-    <%= f.password_field :password, name: "session[password]" %>
+    <%= f.password_field :password, name: "session[password]" %> <%# Creates a field for the password and looks out for a password that was creating during the session%>
   
     <%= f.submit "Log In" %>
   <% end %>
